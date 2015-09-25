@@ -3,7 +3,7 @@
 // とりあえずの対策として、returnをやめるという方法がある
 def upCase(s: String) = {
   if (s.length == 0)
-    return s
+    s
   else
     s.toUpperCase()
 }
