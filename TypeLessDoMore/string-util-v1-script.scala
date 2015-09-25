@@ -1,4 +1,5 @@
 object StringUtil {
+  // メソッドの多重定義
   def joiner(strings: List[String], separator: String): String =
     strings.mkString(separator)
 
