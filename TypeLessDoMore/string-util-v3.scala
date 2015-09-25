@@ -4,7 +4,7 @@ object StringUtil {
 
   def joiner(strings: List[String]): String = strings.mkString(" ")
 
-  def toCollection(string: String) = string.split(' ')
+  def toCollection(string: String): List[String] = string.split(' ').toList
 }
 
 import StringUtil._
