@@ -1,3 +1,4 @@
+// 開発者がメソッド引数に良い名前を付けていれば、メソッド呼び出し時に、名前付き引数がそれぞれドキュメント化されます
 object StringUtil {
   def joiner(strings: List[String], separator: String = " "): String =
     strings.mkString(separator)
