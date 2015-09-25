@@ -1,3 +1,5 @@
 // type mismatch
-val map = Map()
-map.updated("book", "Programming Scala")
+val map = Map[Any, Any]()
+println(map.updated("book", "Programming Scala"))
+println(map)
+
