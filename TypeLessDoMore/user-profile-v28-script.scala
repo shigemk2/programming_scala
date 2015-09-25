@@ -11,6 +11,11 @@ class OptionalUserProfileInfo (
 )
 
 // 実行できてもコンパイルはできない
-println(new OptionalUserProfileInfo)
-println(new OptionalUserProfileInfo(age = 29))
-println(new OptionalUserProfileInfo(age = 29, location = "Earth"))
+val a = new OptionalUserProfileInfo
+val b = new OptionalUserProfileInfo(age = 29)
+val c = new OptionalUserProfileInfo(age = 29, location = "Earth")
+// error: positional after named argument.
+val d = new OptionalUserProfileInfo(age = 29, "Earth")
+println(a)
+println(b)
+println(c)
