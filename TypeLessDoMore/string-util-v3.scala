@@ -6,9 +6,3 @@ object StringUtil {
 
   def toCollection(string: String): List[String] = string.split(' ').toList
 }
-
-import StringUtil._
-
-println(joiner(List("Programming", "Scala")))
-println(joiner(List("Programming", "Scala"), " "))
-println(toCollection("Programming Scala"))
