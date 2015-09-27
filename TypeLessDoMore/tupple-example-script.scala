@@ -8,3 +8,13 @@ println( "Print the third item: "  + t._3 )
 
 val (t1, t2, t3) = tupleator("World", '!', 0x22)
 println( t1 + " " + " " + t3 )
+val t4 = ("Hello", 1, 2.3)
+println(t4._3)
+val t5 = ("Hello", 1, 2, 3)
+println(t5._4)
+val t6 = 1 -> 2
+println(t6)
+println(Tuple2(1, 2))
+println(Pair(1, 2))
+// error: too many arguments
+// println(Pair(1, 2, 3))
