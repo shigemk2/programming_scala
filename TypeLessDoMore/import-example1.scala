@@ -8,3 +8,15 @@ def *(n: Int): Int = {
 }
 
 println(*(5))
+
+// def "(n: Int): Int = {
+//   n
+// }
+
+// println("(5))
+
+def ?(n: Int): Int = {
+  n
+}
+
+println(?(5))
