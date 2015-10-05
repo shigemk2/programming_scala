@@ -1,4 +1,4 @@
-val dogBreads = List("Doberman", "Yorkshire Terrier", "Dachshund")
+val dogBreads = List("Doberman", "Hogehoge Terrier", "Yorkshire Terrier", "Dachshund")
 
 for (bread <- dogBreads
   if bread.contains("Terrier")
