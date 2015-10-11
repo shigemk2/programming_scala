@@ -18,4 +18,11 @@ object MyService1 extends Service {
   }
   override val logger = new MyService1Logger
   def doRun = true
+
+  def main(args: Array[String]): Unit = {
+    val ms1log = new MyService1Logger
+
+    println(doRun)
+    ms1log.log("hogehoge")
+  }
 }
