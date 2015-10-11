@@ -24,3 +24,8 @@ object MyService1 extends Service {
     logger.log("hogehoge")
   }
 }
+
+object MyService2 extends Service {
+  override val logger = MyService1.logger
+  def doRun = true
+}
