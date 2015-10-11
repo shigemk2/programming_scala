@@ -1,7 +1,7 @@
+trait Logger {
+  def log(message: String): Unit
+}
 trait Service {
-  trait Logger {
-    def log(message: String): Unit
-  }
   val logger: Logger
 
   def run = {
@@ -26,6 +26,13 @@ object MyService1 extends Service {
 }
 
 object MyService2 extends Service {
-  override val logger = MyService1.logger
+  class MyService2Logger extends Logger {
+    def log(message: String) = println("2: " + message)
+  }
+  override val logger = new MyService2Logger
   def doRun = true
+  def main(args: Array[String]): Unit = {
+    println(doRun)
+    logger.log("hogehoge")
+  }
 }
