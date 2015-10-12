@@ -33,6 +33,7 @@ object MyService2 extends Service {
   def doRun = true
   def main(args: Array[String]): Unit = {
     println(doRun)
-    logger.log("hogehoge")
+    val logger1: MyService2Logger = logger
+    logger1.log("hogehoge")
   }
 }
