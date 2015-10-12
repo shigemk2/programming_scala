@@ -4,7 +4,7 @@ val willNotWork = List(4, 18, 52)
 val empty = List()
 def processList(l: List[Any]): Unit = l match {
   case head :: tail =>
-    printf("%s ", head)
+    printf("elem: %s, ", head)
     processList(tail)
   case Nil => println("")
 }
