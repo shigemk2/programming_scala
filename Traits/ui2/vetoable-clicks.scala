@@ -1,0 +1,12 @@
+package ui2
+import observer._
+trait VetoableClicks extends Clickable {
+  val maxAllowed = 1 // デフォルト
+  private var count = 0
+  abstract override def click() = {
+    if (count < maxAllowed) {
+      count += 1
+      super.click()
+    }
+  }
+}
