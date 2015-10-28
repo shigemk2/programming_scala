@@ -3,6 +3,7 @@ import org.specs._
 import observer._
 import ui.ButtonCountObserver
 
+// トレイトがお互いに影響し合うとき、予期せぬ振る舞いを防ぐために宣言の順序を覚えておくことは重要なのです。他に注意すべき点は、オブジェクトを大量の細かい粒度のトレイトに分割しすぎると、コードの実行順序がわかりにくくなる
 object ButtonVetoableClickableObserverSpec extends Specification {
   // クリックのオブザーバを持つ拒否可能なボタンは
   "A Vetoable Button with Click Observer" should {
