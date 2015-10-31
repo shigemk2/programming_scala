@@ -20,3 +20,4 @@ class C12 extends Base12 with T1 with T2 {
 }
 println( "Creating C12:" )
 new C12
+println( "After Creating C12" )
