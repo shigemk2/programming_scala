@@ -1,3 +1,4 @@
+// Javaと同様に、extendsキーワードを使って親クラスを指定します
 import java.io._
 
 abstract class BulkReader {
