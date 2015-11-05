@@ -7,6 +7,7 @@ abstract class Widget {
     def get(key: String) = values.get(key)
     def update(key: String, value: Any) = {
       // 前処理。フィルタリングなど。
+      // Scala 2.8ではコンパイル時にMap.updateに対して非推奨の警告が出力される。警告を抑制するには、Map.updatedを使用する
       values = values.update(key, value)
       // 後処理。
     }
