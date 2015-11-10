@@ -1,3 +1,4 @@
+// 可視公開性
 package scopeA {
   class PublicClass1 {
     val publicField = 1
