@@ -20,3 +20,13 @@ package scopeB {
     " nested field: " + publicClass.nested.nestedField
   }
 }
+
+object Public {
+  def main(args: Array[String]) {
+    val a = new scopeA.PublicClass1
+    val b = new scopeB.UsingClass(a)
+    println(b.method) // UsingClass: field: 1 nested field: 1
+  }
+}
+
+
