@@ -1,4 +1,5 @@
 // 可視公開性
+// 可視性キーワードを使用していないすべての宣言は「公開」です。つまりどこからでも参照できます。Scalaにはpublicキーワードがありません。
 package scopeA {
   class PublicClass1 {
     val publicField = 1
