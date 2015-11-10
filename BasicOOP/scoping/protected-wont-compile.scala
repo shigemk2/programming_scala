@@ -15,13 +15,13 @@ package scopeA {
   class ProtectedClass2 extends ProtectedClass1(1) {
     val field1 = protectedField1
     val field2 = protectedField2
-    val nField = new Nested().nestedField // エラー
+    // val nField = new Nested().nestedField // エラー
   }
   class ProtectedClass3 {
     val protectedClass1 = new ProtectedClass1(1)
-    val protectedField1 = protectedClass1.protectedField1 // エラー
-    val protectedField2 = protectedClass1.protectedField2 // エラー
-    val protectedNField = protectedClass1.nested.nestedField // エラー
+    // val protectedField1 = protectedClass1.protectedField1 // エラー
+    // val protectedField2 = protectedClass1.protectedField2 // エラー
+    // val protectedNField = protectedClass1.nested.nestedField // エラー
   }
   protected class ProtectedClass4
   class ProtectedClass5 extends ProtectedClass4
@@ -29,5 +29,6 @@ package scopeA {
 }
 
 package scopeB {
-  class ProtectedClass4B extends scopeA.ProtectedClass4 // エラー
+  class ProtectedClass4B extends scopeA.ProtectedClass3
+  // class ProtectedClass4B extends scopeA.ProtectedClass4 // エラー
 }
