@@ -1,4 +1,5 @@
 // コンパイルできない
+// Access to protected value nestedField not permitted because enclosing class ProtectedClass2 in package scopeA is not a subclass of class Nested in class ProtectedClass1 where target is defined
 package scopeA {
   class ProtectedClass1(protected val protectedField1: Int) {
     protected val protectedField2 = 1
