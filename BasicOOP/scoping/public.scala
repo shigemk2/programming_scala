@@ -1,3 +1,4 @@
+// スコープ
 package scopeA {
   class PublicClass1 {
     val publicField = 1
