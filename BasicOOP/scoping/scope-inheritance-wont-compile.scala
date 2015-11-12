@@ -1,4 +1,5 @@
 // コンパイルできない
+// 、Class1とClass2の両方を囲んでいるパッケージ（または型）に対してスコープ指定している非公開メンバは参照できちゃう
 package scopeA {
   class Class1 {
     private[scopeA] val scopeA_privateField = 1
