@@ -1,4 +1,5 @@
 // コンパイルできない
+// private[this]メンバは同じインスタンスからのみ参照
 package scopeA {
   class PrivateClass1(private[this] val privateField1: Int) {
     private[this] val privateField2 = 1
