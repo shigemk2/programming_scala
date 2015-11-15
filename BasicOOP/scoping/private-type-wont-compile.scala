@@ -1,3 +1,4 @@
+// コンパイルできない
 package scopeA {
   class PrivateClass1(private[PrivateClass1] val privateField1: Int) {
     private[PrivateClass1] val privateField2 = 1
