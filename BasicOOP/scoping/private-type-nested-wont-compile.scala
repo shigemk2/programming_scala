@@ -1,3 +1,4 @@
+// コンパイルできない
 package scopeA {
   class PrivateClass1 {
     class Nested {
