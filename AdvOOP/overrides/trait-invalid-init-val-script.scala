@@ -1,3 +1,4 @@
+// エラー：初期化前に「value」が読み取られる。
 trait AbstractT2 {
   println("In AbstractT2:")
   val value: Int
