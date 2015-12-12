@@ -1,3 +1,4 @@
+// トレイトのメソッドが具象ならば、次のようになります
 trait NameTrait {
   def name = "NameTrait"
 }
