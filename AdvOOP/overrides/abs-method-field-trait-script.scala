@@ -1,3 +1,4 @@
+// トレイトのメソッドが抽象ならば、次のようになります。
 trait AbstractNameTrait {
   def name: String
 }
