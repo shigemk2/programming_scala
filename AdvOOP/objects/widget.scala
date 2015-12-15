@@ -1,3 +1,4 @@
+// applyはコンパニオンクラスのインスタンスの生成だけに使用が限られているわけではありません。コンパニオンクラスのサブクラスのインスタンスを返すこともできます
 package objects
 abstract class Widget {
   def draw(): Unit
