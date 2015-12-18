@@ -1,3 +1,4 @@
+// Widget.applyを実行するSpecs用のobjectを示します。
 package objects
 import org.specs._
 object WidgetApplySpec extends Specification {
