@@ -1,3 +1,4 @@
+// 親のメソッドが具象ならば、overrideキーワードが必要です。
 class Parent {
   def name = "Parent"
 }
