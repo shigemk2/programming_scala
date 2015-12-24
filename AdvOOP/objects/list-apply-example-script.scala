@@ -1,3 +1,4 @@
+// 暗黙のうちにList.applyが使われるスクリプトの例を
 val list1 = List()
 val list2 = List(1, 2.2, "three", 'four)
 val list3 = List("1", "2.2", "three", "four")
