@@ -1,3 +1,4 @@
+// caseキーワードを追加すると、コンパイラによって自動的にいくつもの便利な機能が付加
 package shapes {
   case class Point(x: Double, y: Double)
   abstract class Shape() {
