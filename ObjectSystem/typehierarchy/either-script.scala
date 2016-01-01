@@ -1,3 +1,7 @@
+// 0
+// Oops, got exception java.lang.RuntimeException: 1 is odd!
+// 2
+// Oops, got exception java.lang.RuntimeException: 3 is odd!
 def exceptionToLeft[T](f: => T): Either[java.lang.Throwable, T] = try {
   Right(f)
 } catch {
