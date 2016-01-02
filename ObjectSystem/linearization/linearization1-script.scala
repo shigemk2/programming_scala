@@ -1,3 +1,4 @@
+// 線形化
 class C1 {
   def m = List("C1")
 }
