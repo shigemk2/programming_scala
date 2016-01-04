@@ -1,3 +1,4 @@
+// 今回は可変な変数を使っていません
 def factorial(i: BigInt): BigInt = i match {
   case _ if i == 1 => i
   case _ => i * factorial(i - 1)
