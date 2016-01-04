@@ -1,3 +1,4 @@
+// ループカウンター jとresultはともに可変な変数
 def factorial_loop(i: BigInt): BigInt = {
   var result = BigInt(1)
   for (j <- 2 to i.intValue)
