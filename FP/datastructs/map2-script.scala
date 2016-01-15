@@ -1,3 +1,4 @@
+// 簡単にMapを作ることができます
 val stateCapitals = Map(
   "Alabama" -> "Montgomery",
   "Alaska" -> "Juneau",
